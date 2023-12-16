@@ -1,6 +1,6 @@
 [package]
 name = "async-redis-session-v2"
-version = "0.2.2"
+version = "0.2.3"
 authors = ["Jacob Rothstein <hi@jbr.me>", "Nordine Bittich"]
 edition = "2021"
 description = "redis session store for async-session. Fork with updated dependencies"
