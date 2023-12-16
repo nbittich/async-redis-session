@@ -134,11 +134,7 @@ impl SessionStore for RedisSessionStore {
         match session.expires_in() {
             None => connection.set(id, string).await?,
 
-            Some(expiry) => {
-                connection
-                    .set_ex(id, string, expiry.as_secs() as usize)
-                    .await?
-            }
+            Some(expiry) => connection.set_ex(id, string, expiry.as_secs()).await?,
         };
 
         Ok(session.into_cookie_value())
