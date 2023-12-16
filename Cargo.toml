@@ -1,5 +1,5 @@
 [package]
-name = "async-redis-session"
+name = "async-redis-session-v2"
 version = "0.2.2"
 authors = ["Jacob Rothstein <hi@jbr.me>", "Nordine Bittich"]
 edition = "2021"
